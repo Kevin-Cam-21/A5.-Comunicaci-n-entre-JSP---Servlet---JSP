@@ -41,8 +41,8 @@ public class SProcesar extends HttpServlet
                     "<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css' integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm' crossorigin='anonymous'>"
                     );
             out.println(""
-                        + "<table class='table' border='2'>"
-                        + " <thead class='thead-dark text-center'>"
+                        + "<table class='table table-striped table-dark'>"
+                        + " <thead>"
                         + "  <tr>"
                         + "     <th scope='col'>MATRICULA</th>"
                         + "     <th scope='col'>ALUMNO</th>"
@@ -56,14 +56,14 @@ public class SProcesar extends HttpServlet
             for(int i = 0; i < cont; i++)
             {
                     out.println(""
-                            + "<tbody class='bg-white'>"
+                            + "<tbody>"
                             +   "<tr>"
-                            +       "<td class= 'text-center'>" + alumnos[i].getMatricula() + "</td>"
+                            +       "<td>" + alumnos[i].getMatricula() + "</td>"
                             +       "<td>"+ alumnos[i].getNombre() + " " + alumnos[i].getApellidoPaterno() + " " + alumnos[i].getApellidoMaterno() + "</td>"
-                            +       "<td class= 'text-center'>" + alumnos[i].getDdi() + "</td>"
-                            +       "<td class= 'text-center'>" + alumnos[i].getDwi() + "</td>"
-                            +       "<td class= 'text-center'>" + alumnos[i].getEcbd() + "</td>"
-                            +       "<td class= 'text-center'>" + alumnos[i].calcularPromedio(alumnos[i].getDdi(), alumnos[i].getDwi(), alumnos[i].getEcbd()) + "</td>"
+                            +       "<td>" + alumnos[i].getDdi() + "</td>"
+                            +       "<td>" + alumnos[i].getDwi() + "</td>"
+                            +       "<td>" + alumnos[i].getEcbd() + "</td>"
+                            +       "<td>" + alumnos[i].calcularPromedio(alumnos[i].getDdi(), alumnos[i].getDwi(), alumnos[i].getEcbd()) + "</td>"
                             +   "</tr>"
                             + "</tbody>"
                     );

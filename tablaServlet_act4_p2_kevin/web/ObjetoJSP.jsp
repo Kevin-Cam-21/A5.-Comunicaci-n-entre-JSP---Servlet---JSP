@@ -47,7 +47,6 @@
                     <input type='number' class='controls' name='tfEcbd' placeholder="Ingrese la calificación de ECBD" required>
                 </div>
                 <button type='submit' class='botons' name='btnRegistrar'>Registrar</button>
-                <input type='reset' class='botons' name='btnLimpiar' value='Limpiar'></input>
             </form> 
         </div>     
     </body>
